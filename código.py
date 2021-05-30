@@ -25,6 +25,7 @@ def main():
   #Para se o circuito estiver em série 
   if tipo.lower() == "série":
     alpha = R/(2*L)
+  #Para se o circuito estiver em paralelo
   elif tipo.lower() == "paralelo": 
     alpha = 1/(2*R*C)
   omega = 1/np.sqrt(L*C)
@@ -46,16 +47,17 @@ def main():
   V0 = float(input("V0: "))
   I0 = float(input("I0: "))
  
-  #Tempo de 0 a 10 segundos com 1000 intervalos
+  #Definir o tempo que o circuito sera analisado
   tf = float(input("Digite o tempo final[s]: "))
   N = int(input("Digite o número de passos: "))
   t = np.linspace(0, tf, N)
-  
+
+  #Valor de fontes presentes no circuito assim que esse seja fechado  
   print("Digite os valores da fonte de corrente If[A] ou da fonte tensão Vf[V], caso estejam presentes:")
   Vf = float(input("Vf: "))
   If = float(input("If: "))
  
-  #Calcular a V(t) e I(t)
+  #Calcular a Vc(t) e Ii(t)
   if tipo.lower() == "série": 
     Vt = odeint(model, [V0,(I0/C)], t, args=(2*alpha,omega**2,Vf))
     It = odeint(model, [I0,(Vf-V0-R*I0)/L], t, args=(2*alpha,omega**2,If))
