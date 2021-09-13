@@ -10,7 +10,9 @@
 
 ## Análise cc em um circuito de TJB
 
+![screenshot](https://github.com/Ivan05-amga/repositorio/blob/main/Circuito%20tjb/TjbPrint.png)
+
+
 ## Diodo
 
 
-![screenshot](https://github.com/Ivan05-amga/FileUploader/blob/main/ImageUploader.png)
