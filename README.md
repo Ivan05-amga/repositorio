@@ -3,7 +3,7 @@
 
 ## Tabela de projetos
 
-- [Análise cc em um circuito de TJB](#Análise cc em um circuito de TJB)
+- [Análise cc em um circuito de TJB](#Análise)
 
 
 ## Análise cc em um circuito de TJB
