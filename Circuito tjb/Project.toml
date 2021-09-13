@@ -1,0 +1,4 @@
+[deps]
+ATK_jll = "7b86fcea-f67b-53e1-809c-8f1719c154e8"
+Gtk = "4c0ca9eb-093a-5379-98c5-f87ac0bbbf44"
+VideoIO = "d6d074c3-1acf-5d4c-9a43-ef38773959a2"
